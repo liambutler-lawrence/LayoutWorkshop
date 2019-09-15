@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Main2ViewController.swift
 //  LayoutWorkshop
 //
 //  Created by David Lawrence on 9/15/19.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class Main2ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

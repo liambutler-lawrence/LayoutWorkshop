@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		212014D4232E66C2002778E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212014D3232E66C2002778E4 /* AppDelegate.swift */; };
-		212014D6232E66C2002778E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212014D5232E66C2002778E4 /* ViewController.swift */; };
+		212014D6232E66C2002778E4 /* Main1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212014D5232E66C2002778E4 /* Main1ViewController.swift */; };
 		212014D9232E66C2002778E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212014D7232E66C2002778E4 /* Main.storyboard */; };
 		212014DB232E66C5002778E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212014DA232E66C5002778E4 /* Assets.xcassets */; };
 		212014DE232E66C5002778E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212014DC232E66C5002778E4 /* LaunchScreen.storyboard */; };
+		212014E6232E6E0B002778E4 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212014E5232E6E0B002778E4 /* ChildViewController.swift */; };
+		212014E8232E72EE002778E4 /* Main2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212014E7232E72EE002778E4 /* Main2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		212014D0232E66C2002778E4 /* LayoutWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		212014D3232E66C2002778E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		212014D5232E66C2002778E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		212014D5232E66C2002778E4 /* Main1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main1ViewController.swift; sourceTree = "<group>"; };
 		212014D8232E66C2002778E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		212014DA232E66C5002778E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212014DD232E66C5002778E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212014DF232E66C5002778E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212014E5232E6E0B002778E4 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		212014E7232E72EE002778E4 /* Main2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				212014D3232E66C2002778E4 /* AppDelegate.swift */,
-				212014D5232E66C2002778E4 /* ViewController.swift */,
+				212014E5232E6E0B002778E4 /* ChildViewController.swift */,
+				212014DC232E66C5002778E4 /* LaunchScreen.storyboard */,
+				212014D5232E66C2002778E4 /* Main1ViewController.swift */,
+				212014E7232E72EE002778E4 /* Main2ViewController.swift */,
 				212014D7232E66C2002778E4 /* Main.storyboard */,
 				212014DA232E66C5002778E4 /* Assets.xcassets */,
-				212014DC232E66C5002778E4 /* LaunchScreen.storyboard */,
 				212014DF232E66C5002778E4 /* Info.plist */,
 			);
 			path = LayoutWorkshop;
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212014D6232E66C2002778E4 /* ViewController.swift in Sources */,
+				212014D6232E66C2002778E4 /* Main1ViewController.swift in Sources */,
 				212014D4232E66C2002778E4 /* AppDelegate.swift in Sources */,
+				212014E8232E72EE002778E4 /* Main2ViewController.swift in Sources */,
+				212014E6232E6E0B002778E4 /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
