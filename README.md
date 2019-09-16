@@ -35,7 +35,7 @@ Same effect: looks small, doesn’t go to child screen when tapped.
 ### Get Help
 
 Talk with my key iOS development mentor.
- He cloned my LayoutWorkshop repo and then explained UIBarButtonItem, auto layout constraints, and explained image sizing for the 1x, 2x and 3x sizes in the asset catalogs. He referred to the Apple doc which explains why the bar button is no longer responding to a tap. See handwritten notes. We then discussed how to deal with this. See handwritten notes for details
+ He cloned my LayoutWorkshop repo and then explained UIBarButtonItem, auto layout constraints, and explained image sizing for the 1x, 2x and 3x sizes in the asset catalogs. He referred to the Apple doc which explains why the bar button is no longer responding to a tap. 
 
 He explained these key points:
 - iOS will not stretch an image by default in a UIImage; it will center the image w/in the width and height constraints as it did for the image I placed in the UIView for the bar button
@@ -50,16 +50,17 @@ He explained these key points:
 
 ### Do It The Right Way
 
-Fix the relative size of the image
+#### Fix the relative size of the image
 In Gimp, scale my profile photo from 400x400 px to 32, 64, and 96px
 Drop those three images into a new image set in the LayoutWorkshop app
 In the view controller with the nav bar button, change the code to build the image view from that asset. 
 Build the app, and bingo! - the image appears noticeably larger!
 
-Make the button image respond to a tap
+#### Make the button image respond to a tap
 In the view controller, create a tap gesture recognizer that executes a function
 In the view controller, build the function for the tap gesture recognizer so that the function performs the segue tied to the bar button item, 
 In the view controller, assign the tap gesture recognizer to the image view set as the custom view for the bar button item
+
 Test: when the bar button is tapped,  the child screen appears
 
 
