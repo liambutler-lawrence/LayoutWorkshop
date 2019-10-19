@@ -10,7 +10,15 @@ import UIKit
 
 class Main2ViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var dataStore = CollectionDataSource()
+    var collectionViewLayout = CollectionLayout()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.dataSource = dataStore
+        collectionView.collectionViewLayout = collectionViewLayout
     }
 }
