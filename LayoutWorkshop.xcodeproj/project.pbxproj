@@ -16,6 +16,7 @@
 		212014E8232E72EE002778E4 /* Main2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212014E7232E72EE002778E4 /* Main2ViewController.swift */; };
 		21C9063F235BB94300EDCDFC /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C9063E235BB94300EDCDFC /* CollectionDataSource.swift */; };
 		21C90642235BC37200EDCDFC /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C90641235BC37200EDCDFC /* CollectionLayout.swift */; };
+		21C90644235BCC9200EDCDFC /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C90643235BCC9200EDCDFC /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		212014E7232E72EE002778E4 /* Main2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main2ViewController.swift; sourceTree = "<group>"; };
 		21C9063E235BB94300EDCDFC /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		21C90641235BC37200EDCDFC /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
+		21C90643235BCC9200EDCDFC /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		21C90640235BC33800EDCDFC /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				21C90643235BCC9200EDCDFC /* CollectionCell.swift */,
 				21C9063E235BB94300EDCDFC /* CollectionDataSource.swift */,
 				21C90641235BC37200EDCDFC /* CollectionLayout.swift */,
 			);
@@ -159,6 +162,7 @@
 				21C90642235BC37200EDCDFC /* CollectionLayout.swift in Sources */,
 				212014D4232E66C2002778E4 /* AppDelegate.swift in Sources */,
 				212014E8232E72EE002778E4 /* Main2ViewController.swift in Sources */,
+				21C90644235BCC9200EDCDFC /* CollectionCell.swift in Sources */,
 				212014E6232E6E0B002778E4 /* ChildViewController.swift in Sources */,
 				21C9063F235BB94300EDCDFC /* CollectionDataSource.swift in Sources */,
 			);

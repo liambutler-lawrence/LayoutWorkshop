@@ -21,10 +21,13 @@ class CollectionLayout: UICollectionViewFlowLayout {
 
         
         let cellWidth = availableWidth
-        self.itemSize = CGSize(width: cellWidth, height: 75)
+        self.itemSize = CGSize(width: cellWidth, height: 225)
         
         self.sectionInset = UIEdgeInsets(top: self.minimumInteritemSpacing, left: 0.0, bottom: 0.0, right: 0.0)
         self.sectionInsetReference = .fromSafeArea
+        
+        
+        
     }
     
 }
