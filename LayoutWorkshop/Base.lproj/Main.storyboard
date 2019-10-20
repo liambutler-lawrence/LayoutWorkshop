@@ -51,14 +51,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="TvC-HM-iGA" customClass="CollectionCell" customModule="LayoutWorkshop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KzJ-pE-q1x">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="142"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="414" height="142"/>
+                                        <size key="customSize" width="414" height="260"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -10,22 +10,42 @@ import UIKit
 
 class CollectionCell: UICollectionViewCell {
     
+    
+    //do stuff after the cell is created by the storyboard
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        //This does work, but moved to CollectionDataSource
-        //  so all cell formatting is in one location
-//        self.contentView.layer.cornerRadius = 10
-//        self.contentView.layer.masksToBounds = true
         
-        //NOTE: has no visible effect; see same code in CollectionDataSource
-//        //add a drop shadow to the cell
-//        self.layer.shadowColor = UIColor.black.cgColor
-//        self.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-//        self.layer.shadowRadius = 2.0
-//        self.layer.shadowOpacity = 0.5
-//        self.layer.masksToBounds = false
-//        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
+        let imageView = UIView()
+        
+        //add the image view to the cell's content view
+        self.contentView.addSubview(imageView)
+        
+        //allow autolayout
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        //set up autolayout constraints programmatically
+        imageView.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: self.contentView.layer.frame.width).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        imageView.backgroundColor = UIColor.green
+        
+
+        
+        let label1 = UILabel()
+        label1.text = "Label 1 Text"
+        label1.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.addSubview(label1)
+
+        //set up autolayout constraints programmatically
+        label1.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 170).isActive = true
+        label1.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 20).isActive = true
+        label1.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        label1.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        self.contentView.bringSubviewToFront(label1)
+  
     }
 
 }
