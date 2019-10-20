@@ -21,23 +21,29 @@ class CollectionDataSource: NSObject, UICollectionViewDataSource {
         let identifier = "collectionViewCell"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
         
-        //format the cell content view shape
-        cell.layer.cornerRadius = 20
-        cell.layer.borderWidth = 1.0
-        cell.layer.borderColor = UIColor.lightGray.cgColor
-        cell.layer.masksToBounds = true
+        formatCollectionViewCell(cell)
+
+        return cell
+    }
+    
+
+    func formatCollectionViewCell(_ cell: UICollectionViewCell) {
+        
+        //change background color of cell contentView
+        cell.contentView.backgroundColor = UIColor.white
+        
+        //round the corners of the cell
+        cell.contentView.layer.cornerRadius = 10
+        cell.contentView.layer.masksToBounds = true
         
         //add a drop shadow to the cell
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         cell.layer.shadowRadius = 2.0
         cell.layer.shadowOpacity = 0.5
-        //cell.layer.masksToBounds = false
+        cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-            
 
-        
-        return cell
     }
     
     

@@ -10,12 +10,22 @@ import UIKit
 
 class CollectionCell: UICollectionViewCell {
     
-//    override func prepareForReuse() {
-//        contentView.layer.cornerRadius = 8.0
-//        contentView.layer.borderWidth = 1.0
-//        contentView.layer.borderColor = UIColor.clear.cgColor
-//        contentView.layer.masksToBounds = true
-//
-//    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        //This does work, but moved to CollectionDataSource
+        //  so all cell formatting is in one location
+//        self.contentView.layer.cornerRadius = 10
+//        self.contentView.layer.masksToBounds = true
+        
+        //NOTE: has no visible effect; see same code in CollectionDataSource
+//        //add a drop shadow to the cell
+//        self.layer.shadowColor = UIColor.black.cgColor
+//        self.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+//        self.layer.shadowRadius = 2.0
+//        self.layer.shadowOpacity = 0.5
+//        self.layer.masksToBounds = false
+//        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
+    }
 
 }
